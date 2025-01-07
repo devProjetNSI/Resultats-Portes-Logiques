@@ -1,0 +1,64 @@
+<html lang="fr">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="stylesheet" href="style.css" /> <!-- permet d'importer la page de style css-->
+		<title>Résultats des portes logiques</title> <!-- titre de la page ; il s'affiche dans le navigateur dans les barres-->
+	</head>
+	<body>
+		<ul id='menu'> <!--debut du men: il permet d'acceder a toutes les pages web ainsi qu'aux sources ; il est present sur toutes le pages web -->
+			<li>
+				<a href="projet_html.html"> Accueil</a> <!-- envoi vers la page web accueil-->
+			</li>
+			<li>
+				<a href="and.html"> Portes logiques</a> <!-- envoi vers la page web des definitions des portes logiaues-->
+			</li>
+			<li>
+				<a href="resultat.html"> Calculer le résultat d'une porte</a> <!-- envoi vers la page web qui permet de calculer le resultat d'une porte-->
+			</li>
+			<li>
+				<a href="https://www.lemagit.fr/definition/Porte-Logique">Source</a> <!--source du contenu mais surtout permet de lancer le panneau de défilement des 2 sources-->
+				<ul>
+					<li>
+						<a href="http://gerald.perminjat.free.fr/">Pour le code</a> <!-- source de l'inspiration du code ( le site d'aide de M.Perminjat)-->
+					</li>
+					<li>
+						<a href="https://www.lemagit.fr/definition/Porte-Logique">Pour le contenu</a> <!-- source du contenu tiree du MagIt-->
+					</li>
+				</ul>
+		</ul><!-- fin du menu-->
+		<br>
+		<br>
+		<h1><u>Cet outil calcule le résultat des portes logiques</u></h1>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+			<form Name=’Form’><!--debut du module qui permet de calculer le resultrat d'une porte-->
+			<div>
+				<label for="binaire_1">Premier nombre binaire :</label>			<!--ces 2 lignes sont pour l'affichage qui permet de rentrer le premier nombre et de le stocker pour l'envoyer dans le java-->
+				<input type="number" name="nombre" id="binaire_1" min="0" max="1" step="1"/>
+			</div>
+			<div>
+				<label for ="binaire_2">Second nombre binaire :</label>		<!--ces 2 lignes sont pour l'affichage qui permet de rentrer le deuxieme nombre et de le stocker pour l'envoyer dans le java-->
+				<input type="number" name="nombre" id="binaire_2" min="0" max="1" step="1"/>
+			</div>
+			<div>
+				<select name="select" id="porte"> <!-- ce sont les differentes portes, elles sont reliee a une fonction dans le java qui lance le calucl de la porte logique choisi-->
+					<option>ET</option>
+					<option>OU</option>
+					<option>SOIT/OU</option>
+					<option>NAND</option>
+					<option>NOR</option>
+					<option>XNOR</option>	
+				</select>
+			</div>
+			<div>
+				<input type="button" id="bt" value="Calculer" onclick ="calcul()"><!--bouton calculer il lance le programme java avec les donnees recuperer dans les inputs-->
+			</div>
+			<div>
+			<h2>Le resultat est : </h2><h2 id="resultat"></h2> <!--affiche le resultat-->
+			</div>
+
+		<script src=script.js></script> <!-- lance le script java -->
+	</body>

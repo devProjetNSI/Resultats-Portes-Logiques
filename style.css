@@ -1,0 +1,126 @@
+
+	
+/*titre de taille 1*/ h1 {
+  color: #BA0306;
+  text-align: center;
+}
+/*titre de taille 2*/ h2 {
+  color: black;
+  text-align: center;
+} 
+/*titre de taille 3*/ h3 {
+  color: floralwhite;
+  text-align: left;
+} 
+/*titre de taille 5*/ h5{
+   color: black;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+video {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+
+body {
+    height: 100vh;
+    position: relative; /* Nécessaire pour le pseudo-élément */
+    
+}
+
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 250%;
+    height: 250%;
+    background-image: url(background_noel.jpg); /* Chemin de l'image */
+    background-size: cover; /* Ajuste l'image pour couvrir tout l'écran */
+    background-repeat: no-repeat; /* Empêche la répétition de l'image */
+    background-position: center; /* Centre l'image */
+    filter: blur(8px); /* Applique un flou */
+    z-index: -1; /* Place le pseudo-élément derrière le contenu principal */
+}
+
+
+#menu a { /*utilisation pour le menu mais faire attention si c'est pour autre chose */
+    display: block;
+    padding: 0;
+    background: #BA0306;
+    color: #ffff;
+    text-decoration: none;
+    width: 288px;
+	text-align: center;
+}
+
+p { /* paragraphe dans le texte */
+   text-align: center;
+   color: black;
+   font-family: Times;
+   margin-left: 10px;
+}
+
+button { 
+   color:black black;
+}
+li { /*menu*/
+    line-height: 150%;
+	text-align: -webkit-match-parent;
+}
+#menu, #menu ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    line-height: 21px;
+    text-align: center;
+	color: black;
+    text-align: justify;
+}
+#menu {
+    font-weight: bold;
+    font-family: Times;
+}
+li ul li { /*menu*/
+    border-top: 1px solid transparent;
+}
+li { /*menu*/
+    border-right: 1px solid transparent;
+	float: left;
+    border-right: 1px solid #fff;
+}
+li ul { /*menu*/
+    position: absolute;
+    width: 288px;
+    left: -999em;
+}
+div { /* place le modul au milieu de la page*/
+	text-align: center;
+}
+
+p  {
+   color: White;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
