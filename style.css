@@ -75,7 +75,7 @@ li { /*menu*/
     line-height: 150%;
 	text-align: -webkit-match-parent;
 }
-#menu, #menu ul {
+ul {
     padding: 0;
     margin: 0;
     list-style: none;
