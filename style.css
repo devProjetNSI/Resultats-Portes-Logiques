@@ -118,7 +118,7 @@ text-decoration: underline;
 color: white;
 }
 
-.marginleft {
+.marginleft { /*deplacer le paragraphe plus sur la droite*/
 margin-left: 190px;
 }
 
