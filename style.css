@@ -110,7 +110,13 @@ p  {
    color: White;
 }
 
+underline { /*souligner les titres*/
+text-decoration: underline;
+}
 
+blanc { /*colorer le texte blanc*/
+color: white;
+}
 
 
 
