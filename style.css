@@ -110,15 +110,15 @@ p  {
    color: White;
 }
 
-body::underline { /*souligner les titres*/
+.underline { /*souligner les titres*/
 text-decoration: underline;
 }
 
-body::blanc { /*colorer le texte blanc*/
+.blanc { /*colorer le texte blanc*/
 color: white;
 }
 
-body::marginleft {
+.marginleft {
 margin-left: 190px;
 }
 
