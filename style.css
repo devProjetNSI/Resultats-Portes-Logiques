@@ -103,6 +103,7 @@ li ul { /*menu*/
 }
 div { /* place le modul au milieu de la page*/
 	text-align: center;
+	color: black;
 }
 
 p  {
