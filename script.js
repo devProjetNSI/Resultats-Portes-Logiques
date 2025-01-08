@@ -1,4 +1,7 @@
-function calcul()
+function calcul() 
+	//cette fonction est celle qui s'active lorsqu'on on appuis sur le bouton calcul dans le site
+	//elle permet de recuperer les infos données puis de lancer la bonne fonction en fonction de la porte demander
+
 {
 	binaire_1=document.getElementById("binaire_1");
 	binaire_2=document.getElementById("binaire_2");
@@ -18,6 +21,7 @@ function calcul()
 }
 
 function calculET()
+	//cette fonction est celle pour la porte ET(AND) et renvoi le resultat en fonction des 2 nombres donnés dans le site puis renvoi le resultat dans le site
 {
 	if(binaire_1.value==0)
 		{resultat=0}
@@ -32,6 +36,7 @@ function calculET()
 }	
 	
 function calculOU()
+	// cette fonction est celle de la porte OU(or) et renvoi le resultat en fonction des 2 nombres donnés dans le site puis renvoi le resultat dans le site
 {
 	if(binaire_1.value==0)
 	{if(binaire_2.value==0)
@@ -46,6 +51,7 @@ function calculOU()
 	document.getElementById("resultat").innerHTML=resultat;
 }	
 function calculSOIT()
+	//cette fonction est celle de la porte soit/ou (xor) et renvoi le resultat en fonction des 2 nombres donnés dans le site puis renvoi le resultat dans le site
 {
 	if(binaire_1.value==0)
 	{if(binaire_2.value==0)
@@ -66,6 +72,7 @@ function calculSOIT()
 	
 }	
 function calculNAND()
+	//cette fonction est celle de la porte NAND et renvoi le resultat en fonction des 2 nombres donnés dans le site puis renvoi le resultat dans le site
 {
 	if(binaire_1.value==0)
 		{resultat=1}
@@ -80,6 +87,7 @@ function calculNAND()
 	document.getElementById("resultat").innerHTML=resultat;		
 }	
 function calculNOR()
+	//cette fonction est celle de la porte NOR et renvoi le resultat en fonction des 2 nombres donnés dans le site puis renvoi le resultat dans le site
 {
 	if(binaire_1.value==0)
 	{if(binaire_2.value==0)
@@ -100,6 +108,7 @@ function calculNOR()
 }
 	
 function calculXNOR()
+	//cette fonction est celle de la porte XNOR et renvoi le resultat en fonction des 2 nombres donnés dans le site puis renvoi le resultat dans le site
 {
 	if(binaire_1.value==0)
 	{if(binaire_2.value==0)
