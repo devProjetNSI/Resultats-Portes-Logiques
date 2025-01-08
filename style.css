@@ -62,7 +62,7 @@ a { /*utilisation pour le menu mais faire attention si c'est pour autre chose */
 }
 
 p { /* paragraphe dans le texte */
-   text-align: center;
+   text-align: left;
    color: black;
    font-family: Times;
    margin-left: 10px;
