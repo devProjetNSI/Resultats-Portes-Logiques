@@ -51,7 +51,7 @@ body::before {
 }
 
 
-#menu a { /*utilisation pour le menu mais faire attention si c'est pour autre chose */
+a { /*utilisation pour le menu mais faire attention si c'est pour autre chose */
     display: block;
     padding: 0;
     background: #BA0306;
@@ -118,8 +118,9 @@ blanc { /*colorer le texte blanc*/
 color: white;
 }
 
-
-
+marginleft {
+margin-left: 190px;
+}
 
 
 
